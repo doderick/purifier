@@ -1,0 +1,32 @@
+{
+    "name": "doderick/purifier",
+    "description": "HTMLPurifier Package for ThinkPHP 5.1",
+    "type": "think-extend",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "doderick",
+            "email": "doderick@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "topthink/framework": "5.1.*",
+        "topthink/think-installer": "^2.0",
+        "topthink/think-helper": ">=1.0.4",
+        "ezyang/htmlpurifier": "4.12.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Doderick\\Purifier\\": "src/"
+        },
+        "files": [
+            "src/common.php"
+        ]
+    },
+    "extra": {
+        "think-config": {
+            "purifier": "src/config.php"
+        }
+    }
+}
